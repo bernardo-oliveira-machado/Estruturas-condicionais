@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        double salario;
+
+        System.out.print("Digite o salário: ");
+        salario = sc.nextDouble();
+
+        if (salario < 1000) {
+            salario = salario * 1.30;
+            System.out.println("Novo salário: " + salario);
+        } else {
+            System.out.println("Funcionário não possui direito ao aumento.");
+        }
+
+        sc.close();
+    }
+}
